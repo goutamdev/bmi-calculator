@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BMI Calculator Modal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>BMI Calculator</h1>
+  <form id="bmiForm" class="bmi-form">
+    <label for="weight">Weight (kg):</label>
+    <input type="number" id="weight" required placeholder="e.g. 60">
+
+    <label for="height">Height (cm):</label>
+    <input type="number" id="height" required placeholder="e.g. 170">
+
+    <button type="submit">Calculate</button>
+  </form>
+</div>
+
+<div id="bmiModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Your BMI Result</h2>
+    <p id="bmiValue"></p>
+    <p id="bmiAdvice"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
